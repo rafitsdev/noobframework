@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+  </head>
+
+  <body>
+    <h1>Notícias</h1>
+    <div class="container">
+      <ul>
+        <?php foreach($noticias as $noticia) { ?>
+          <li><a href="<?php echo 'http://localhost/portal/noticia/' . $noticia['titulo_url'] ?>"><?php echo $noticia['titulo']?></a></li>
+        <?php } ?>
+      </ul>
+    </div>
+  </body>
+
+</html>
